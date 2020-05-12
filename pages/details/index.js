@@ -7,9 +7,9 @@ Page({
    */
   data: {
     imgUrls: [
-      'https://wx.yogalt.com/file/images/img1.jpeg',
-      'https://wx.yogalt.com/file/images/img2.jpeg',
-      'https://wx.yogalt.com/file/images/img3.jpeg'
+      'https://www.j116.cn/file/images/img1.jpeg',
+      'https://www.j116.cn/file/images/img2.jpeg',
+      'https://www.j116.cn/file/images/img3.jpeg'
     ],
     indicatorDots: true,
     autoplay: true,

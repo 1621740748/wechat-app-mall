@@ -9,7 +9,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imgUrls: null,
-    baseUrl:"https://wx.yogalt.com/",
+    baseUrl:"https://www.j116.cn/",
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -53,7 +53,7 @@ Page({
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         var tempFilePaths = res.tempFilePaths;
         wx.uploadFile({
-          url: 'https://wx.yogalt.com/api/v1/admin/uploadBanner',      //此处换上你的接口地址
+          url: 'https://www.j116.cn/api/v1/admin/uploadBanner',      //此处换上你的接口地址
           filePath: tempFilePaths[0],
           name: 'inputFile',
           header: {
@@ -122,14 +122,14 @@ Page({
     //   })
     
     // wx.request({
-    //   url: 'https://wx.yogalt.com/api/v1/admin/getClassList',
+    //   url: 'https://www.j116.cn/api/v1/admin/getClassList',
     //   success: (res) => {
     //     console.log(res.data)
     //   }
     // })
 
     // wx.request({
-    //   url: 'https://wx.yogalt.com/api/v1/admin/addClass',
+    //   url: 'https://www.j116.cn/api/v1/admin/addClass',
     //   method: 'POST',
     //   data: {
     //     cate_name: 'party',
@@ -145,11 +145,11 @@ Page({
     // })
 
     // wx.request({
-    //   url: 'https://wx.yogalt.com/api/v1/admin/addItem',
+    //   url: 'https://www.j116.cn/api/v1/admin/addItem',
     //   method:'POST',
     //   data:{
     //     title:"中秋节大蛋糕",
-    //     img:"https://wx.yogalt.com/file/images/img1.jpeg",
+    //     img:"https://www.j116.cn/file/images/img1.jpeg",
     //     spec:"1221123",
     //     price:'990.2',
     //     num:999,
