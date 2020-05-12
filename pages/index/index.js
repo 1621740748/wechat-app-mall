@@ -109,64 +109,65 @@ Page({
         imgUrls: res.data
       })
     })
-    // app.http('v1/admin/addCoupon',{
-    //   name:'节日蛋糕满200减50',
-    //   money:50,
-    //   effective: ['2018-09-10', '2018-09-10'],
-    //   category:'5b8f45f2afb7c17788e11994',
-    //   category_name:'节日',
-    //   condition: 200
-    // },"POST")
-    //   .then(res => {
-    //    console.log(res)
-    //   })
+    ////////////////
+    app.http('v1/admin/addCoupon',{
+      name:'节日蛋糕满200减50',
+      money:50,
+      effective: ['2018-09-10', '2018-09-10'],
+      category:'5b8f45f2afb7c17788e11994',
+      category_name:'节日',
+      condition: 200
+    },"POST")
+      .then(res => {
+       console.log(res)
+      })
     
-    // wx.request({
-    //   url: 'https://www.j116.cn/api/v1/admin/getClassList',
-    //   success: (res) => {
-    //     console.log(res.data)
-    //   }
-    // })
+    wx.request({
+      url: 'https://www.j116.cn/api/v1/admin/getClassList',
+      success: (res) => {
+        console.log(res.data)
+      }
+    })
 
-    // wx.request({
-    //   url: 'https://www.j116.cn/api/v1/admin/addClass',
-    //   method: 'POST',
-    //   data: {
-    //     cate_name: 'party',
-    //     cate_order: 4,
-    //   },
-    //   header: {
-    //     'X-Requested-With': 'XMLHttpRequest',
-    //     'Content-Type': 'application/x-www-form-urlencoded'
-    //   },
-    //   success: (res) => {
-    //     console.log(res.data)
-    //   }
-    // })
+    wx.request({
+      url: 'https://www.j116.cn/api/v1/admin/addClass',
+      method: 'POST',
+      data: {
+        cate_name: 'party',
+        cate_order: 4,
+      },
+      header: {
+        'X-Requested-With': 'XMLHttpRequest',
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      success: (res) => {
+        console.log(res.data)
+      }
+    })
 
-    // wx.request({
-    //   url: 'https://www.j116.cn/api/v1/admin/addItem',
-    //   method:'POST',
-    //   data:{
-    //     title:"中秋节大蛋糕",
-    //     img:"https://www.j116.cn/file/images/img1.jpeg",
-    //     spec:"1221123",
-    //     price:'990.2',
-    //     num:999,
-    //     content:'我是情人节大蛋糕',
-    //     html: '哈哈哈哈或',
-    //     category:"5b8f45f2afb7c17788e11994|节日",
-    //     is_hot:true
-    //   },
-    //   header:{
-    //     'X-Requested-With': 'XMLHttpRequest',
-    //     'Content-Type': 'application/x-www-form-urlencoded'
-    //   },
-    //   success: (res) => {
-    //     console.log(res.data)
-    //   }
-    // })
-    
+    wx.request({
+      url: 'https://www.j116.cn/api/v1/admin/addItem',
+      method:'POST',
+      data:{
+        title:"中秋节大蛋糕",
+        img:"https://www.j116.cn/file/images/img1.jpeg",
+        spec:"1221123",
+        price:'990.2',
+        num:999,
+        content:'我是情人节大蛋糕',
+        html: '哈哈哈哈或',
+        category:"5b8f45f2afb7c17788e11994|节日",
+        is_hot:true
+      },
+      header:{
+        'X-Requested-With': 'XMLHttpRequest',
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      success: (res) => {
+        console.log(res.data)
+      }
+    })
+   ///////////////////////// 
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
